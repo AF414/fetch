@@ -1,0 +1,28 @@
+models:
+  - name: dim_user
+    columns:
+      - name: _id
+        tests:
+          - unique
+          - not_null
+  - name: dim_brand
+    columns:
+      - name: brand_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_receipt
+    columns:
+      - name: receipt_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_receipt_item
+    columns:
+      - name: receipt_item_id
+        tests:
+          - unique
+          - not_null
+
